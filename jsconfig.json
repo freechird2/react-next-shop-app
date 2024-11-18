@@ -1,7 +1,15 @@
 {
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
+    "compilerOptions": {
+        "checkJs": true,
+        "jsx": "preserve",
+        "baseUrl": "./src",
+        "paths": {
+            "@assets/*": ["assets/*"],
+            "@components/*": ["components/*"],
+            "@fb/*": ["firebase/*"],
+            "@layouts/*": ["layouts/*"],
+            "@redux/*": ["redux/*"]
+        }
+    },
+    "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.js", "**/*.jsx"]
 }
